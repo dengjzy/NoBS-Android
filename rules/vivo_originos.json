@@ -1,0 +1,131 @@
+{
+  "brand": "vivo",
+  "rom_family": "vivo_originos",
+  "name": "vivo / iQOO (OriginOS)",
+  "recommended_dns": "dns.adguard-dns.com",
+  "tiers": {
+    "tier0_pure_ads": {
+      "name": "核心广告与遥测服务 (Tier 0)",
+      "description": "纯后台广告分发、锁屏画报、遥测上报与快应用，停用对手机基本功能零影响。",
+      "packages": [
+        {
+          "package": "com.vivo.magazine",
+          "name": "锁屏画报",
+          "reason": "锁屏界面轮播商业广告与资讯壁纸",
+          "action": "disable-user",
+          "risk": "none"
+        },
+        {
+          "package": "com.vivo.hybrid",
+          "name": "快应用框架",
+          "reason": "静默拉起免安装网页广告与推广小程序",
+          "action": "disable-user",
+          "risk": "none"
+        },
+        {
+          "package": "com.vivo.nps",
+          "name": "用户满意度遥测",
+          "reason": "后台常驻用户行为打点与数据上报",
+          "action": "disable-user",
+          "risk": "none"
+        },
+        {
+          "package": "com.vivo.appfilter",
+          "name": "应用商店推广推荐过滤",
+          "reason": "系统内嵌应用推荐分发服务",
+          "action": "disable-user",
+          "risk": "none"
+        },
+        {
+          "package": "com.android.adservices.api",
+          "name": "Android AdServices API",
+          "reason": "Android 隐私沙盒跨应用广告归因跟踪",
+          "action": "disable-user",
+          "risk": "none"
+        },
+        {
+          "package": "com.android.ext.adservices.api",
+          "name": "AdServices 扩展 API",
+          "reason": "系统广告归因组件",
+          "action": "disable-user",
+          "risk": "none"
+        },
+        {
+          "package": "com.vlife.vivo.wallpaper",
+          "name": "微生动态壁纸服务",
+          "reason": "预装合作动态壁纸推广",
+          "action": "disable-user",
+          "risk": "none"
+        },
+        {
+          "package": "com.bbk.iqoo.logsystem",
+          "name": "vivo/iQOO 日志诊断服务",
+          "reason": "系统调试日志自动收集与云端上报",
+          "action": "disable-user",
+          "risk": "none"
+        }
+      ]
+    },
+    "tier1_bloat_marketing": {
+      "name": "系统资讯流与推广应用 (Tier 1)",
+      "description": "预装资讯流、非核心娱乐推荐应用，根据个人使用习惯按需选择。",
+      "packages": [
+        {
+          "package": "com.yozo.vivo.office",
+          "name": "永中 Office 预装版",
+          "reason": "预装第三方办公软件，常驻占用后台",
+          "action": "disable-user",
+          "risk": "low"
+        },
+        {
+          "package": "com.vivo.browser.novel.widget",
+          "name": "浏览器免费小说插件",
+          "reason": "桌面小说阅读推广组件",
+          "action": "disable-user",
+          "risk": "low"
+        },
+        {
+          "package": "com.vivo.game",
+          "name": "vivo 游戏中心",
+          "reason": "内置游戏推广与下载引导",
+          "action": "disable-user",
+          "risk": "low"
+        },
+        {
+          "package": "com.vivo.gamecube",
+          "name": "游戏魔盒推广组件",
+          "reason": "游戏推荐资讯流",
+          "action": "disable-user",
+          "risk": "low"
+        }
+      ]
+    },
+    "tier2_feature_feeds": {
+      "name": "负一屏与搜索资讯 (Tier 2 - 谨慎)",
+      "description": "如果你习惯用负一屏看快递卡片，建议保留；若只想关掉热搜资讯，建议仅关闭开关。",
+      "packages": [
+        {
+          "package": "com.vivo.hiboard",
+          "name": "智慧桌面 (负一屏)",
+          "reason": "负一屏资讯瀑布流（停用会导致负一屏整体关闭）",
+          "action": "disable-user",
+          "risk": "medium"
+        },
+        {
+          "package": "com.vivo.globalsearch",
+          "name": "全局搜索",
+          "reason": "下拉全局搜索（停用后无法通过桌面下拉进行本机应用搜索）",
+          "action": "disable-user",
+          "risk": "medium"
+        }
+      ]
+    }
+  },
+  "settings_optimizations": [
+    {
+      "namespace": "global",
+      "key": "device_provisioned",
+      "desc": "基础系统就绪标记"
+    }
+  ]
+}

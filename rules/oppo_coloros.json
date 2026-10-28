@@ -1,0 +1,49 @@
+{
+  "brand": "oppo",
+  "rom_family": "oppo_coloros",
+  "name": "OPPO / OnePlus / Realme (ColorOS)",
+  "recommended_dns": "dns.adguard-dns.com",
+  "tiers": {
+    "tier0_pure_ads": {
+      "name": "核心广告与营销服务 (Tier 0)",
+      "description": "纯后台广告分发、遥测上报与锁屏画报，停用对手机基本功能零影响。",
+      "packages": [
+        {
+          "package": "com.opos.ads",
+          "name": "OPPO 移动广告联盟 (OPOS Ads)",
+          "reason": "ColorOS 系统级广告分发与精准投放引擎",
+          "action": "disable-user",
+          "risk": "none"
+        },
+        {
+          "package": "com.heytap.pictorial",
+          "name": "乐划锁屏 (锁屏画报)",
+          "reason": "锁屏广告壁纸与资讯流",
+          "action": "disable-user",
+          "risk": "none"
+        },
+        {
+          "package": "com.nearme.statistics.rom",
+          "name": "ColorOS 数据统计上报",
+          "reason": "用户行为数据统计与遥测上报",
+          "action": "disable-user",
+          "risk": "none"
+        },
+        {
+          "package": "com.nearme.instant.platform",
+          "name": "快应用服务",
+          "reason": "免安装快应用广告静默载入服务",
+          "action": "disable-user",
+          "risk": "none"
+        },
+        {
+          "package": "com.android.adservices.api",
+          "name": "Android AdServices API",
+          "reason": "Android 隐私沙盒跨应用广告追踪",
+          "action": "disable-user",
+          "risk": "none"
+        }
+      ]
+    }
+  }
+}

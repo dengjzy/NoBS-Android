@@ -1,0 +1,83 @@
+{
+  "brand": "xiaomi",
+  "rom_family": "xiaomi_hyperos",
+  "name": "Xiaomi / Redmi (HyperOS / MIUI)",
+  "recommended_dns": "dns.adguard-dns.com",
+  "tiers": {
+    "tier0_pure_ads": {
+      "name": "核心广告与营销服务 (Tier 0)",
+      "description": "纯后台广告分发、遥测打点、锁屏画报与快应用，停用对手机基本功能零影响。",
+      "packages": [
+        {
+          "package": "com.miui.systemAdSolution",
+          "name": "系统广告核心解决方案 (MSAS)",
+          "reason": "MIUI/HyperOS 系统应用广告总开关及广告分发引擎",
+          "action": "disable-user",
+          "risk": "none"
+        },
+        {
+          "package": "com.miui.analytics",
+          "name": "MIUI 数据分析与上报",
+          "reason": "系统打点统计、用户画像分析服务",
+          "action": "disable-user",
+          "risk": "none"
+        },
+        {
+          "package": "com.mfashiongallery.emag",
+          "name": "小米锁屏画报",
+          "reason": "锁屏壁纸广告轮播及强制静默下载",
+          "action": "disable-user",
+          "risk": "none"
+        },
+        {
+          "package": "com.miui.hybrid",
+          "name": "快应用服务框架",
+          "reason": "免安装快应用广告静默载入服务",
+          "action": "disable-user",
+          "risk": "none"
+        },
+        {
+          "package": "com.miui.hybrid.accessory",
+          "name": "快应用辅助引擎",
+          "reason": "快应用后台伴生进程",
+          "action": "disable-user",
+          "risk": "none"
+        },
+        {
+          "package": "com.android.adservices.api",
+          "name": "Android AdServices API",
+          "reason": "Android 隐私沙盒跨应用广告追踪",
+          "action": "disable-user",
+          "risk": "none"
+        }
+      ]
+    },
+    "tier1_bloat_marketing": {
+      "name": "预装营销与娱乐应用 (Tier 1)",
+      "description": "非核心预装推广组件，按需禁用。",
+      "packages": [
+        {
+          "package": "com.xiaomi.gamecenter",
+          "name": "小米游戏中心",
+          "reason": "游戏推荐与营销弹窗",
+          "action": "disable-user",
+          "risk": "low"
+        },
+        {
+          "package": "com.mipay.wallet",
+          "name": "小米钱包",
+          "reason": "理财贷款营销推送（若使用小米公交卡/门禁卡请保留）",
+          "action": "disable-user",
+          "risk": "low"
+        },
+        {
+          "package": "com.miui.bugreport",
+          "name": "用户反馈中心",
+          "reason": "崩溃日志与后台遥测上报",
+          "action": "disable-user",
+          "risk": "low"
+        }
+      ]
+    }
+  }
+}

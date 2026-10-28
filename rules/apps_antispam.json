@@ -1,0 +1,90 @@
+{
+  "name": "第三方 App 恶疾治理规则",
+  "description": "针对主流国产第三方 App 的摇一摇开屏广告、剪贴板窃取与通知骚扰进行专项治理。",
+  "shake_ad_apps": [
+    {
+      "package": "tv.danmaku.bili",
+      "name": "哔哩哔哩",
+      "risk": "none",
+      "desc": "拦截开屏摇一摇跳转购物平台"
+    },
+    {
+      "package": "com.sankuai.meituan",
+      "name": "美团",
+      "risk": "none",
+      "desc": "拦截开屏摇一摇营销活动"
+    },
+    {
+      "package": "me.ele",
+      "name": "饿了么",
+      "risk": "none",
+      "desc": "拦截开屏摇一摇红包跳转"
+    },
+    {
+      "package": "com.taobao.taobao",
+      "name": "手机淘宝",
+      "risk": "none",
+      "desc": "拦截开屏摇一摇进入会场"
+    },
+    {
+      "package": "com.jingdong.app.mall",
+      "name": "京东",
+      "risk": "none",
+      "desc": "拦截开屏晃动误触"
+    },
+    {
+      "package": "com.xunmeng.pinduoduo",
+      "name": "拼多多",
+      "risk": "none",
+      "desc": "拦截开屏晃动误触"
+    },
+    {
+      "package": "com.xingin.xhs",
+      "name": "小红书",
+      "risk": "none",
+      "desc": "拦截开屏摇一摇广告"
+    },
+    {
+      "package": "com.netease.cloudmusic",
+      "name": "网易云音乐",
+      "risk": "none",
+      "desc": "拦截开屏摇一摇商单"
+    },
+    {
+      "package": "com.tencent.qqmusic",
+      "name": "QQ音乐",
+      "risk": "none",
+      "desc": "拦截开屏摇一摇广告"
+    },
+    {
+      "package": "com.autonavi.minimap",
+      "name": "高德地图",
+      "risk": "none",
+      "desc": "拦截开屏晃动广告"
+    },
+    {
+      "package": "com.ss.android.ugc.aweme",
+      "name": "抖音",
+      "risk": "none",
+      "desc": "拦截开屏跳转广告"
+    },
+    {
+      "package": "com.youku.phone",
+      "name": "优酷视频",
+      "risk": "none",
+      "desc": "拦截开屏摇一摇广告"
+    },
+    {
+      "package": "com.zhihu.android",
+      "name": "知乎",
+      "risk": "none",
+      "desc": "拦截开屏摇一摇广告"
+    },
+    {
+      "package": "com.sina.weibo",
+      "name": "微博",
+      "risk": "none",
+      "desc": "拦截开屏摇一摇广告"
+    }
+  ]
+}
